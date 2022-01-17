@@ -1,0 +1,58 @@
+{
+ "charts": [],
+ "content": "[{\"type\":\"header\",\"data\":{\"text\":\"Z-Healthcare\\n\\t\\t\\t\\n\\t\\t\\n\\t\\t\\t\\n\\t\\t\\n\\t\\t\\t\\n\\t\\t\",\"level\":4,\"col\":12}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Patient\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Appointment\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":4}},{\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Practitioner\",\"col\":4}}]",
+ "creation": "2022-01-15 21:06:11.707578",
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "hide_custom": 0,
+ "icon": "active",
+ "idx": 0,
+ "label": "Healthcare",
+ "links": [],
+ "modified": "2022-01-17 16:36:51.985736",
+ "modified_by": "Administrator",
+ "module": "Health Care",
+ "name": "Healthcare",
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "roles": [],
+ "sequence_id": 2,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Created",
+   "label": "Item",
+   "link_to": "Item",
+   "stats_filter": "{\"status\":[\"=\",null]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "format": "{} Open",
+   "label": "Appointment",
+   "link_to": "Patient Appointment",
+   "stats_filter": "{\"status\":[\"=\",null]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "format": "{} Active",
+   "label": "Patient",
+   "link_to": "Patient",
+   "stats_filter": "{\"status\":[\"=\",0]}",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Practitioner",
+   "link_to": "Practitioner",
+   "type": "DocType"
+  }
+ ],
+ "title": "Healthcare"
+}

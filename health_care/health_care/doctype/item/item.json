@@ -1,0 +1,107 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-01-14 15:21:59.909994",
+ "doctype": "DocType",
+ "document_type": "Document",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "status",
+  "naming_series",
+  "item_name",
+  "item_code",
+  "item_price",
+  "uom",
+  "column_break_6",
+  "billable",
+  "is_consultation",
+  "consultation_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Data",
+   "label": "Item Code"
+  },
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "label": "Item Name"
+  },
+  {
+   "fieldname": "item_price",
+   "fieldtype": "Currency",
+   "label": "Item Price"
+  },
+  {
+   "fieldname": "uom",
+   "fieldtype": "Data",
+   "label": "UOM"
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "HLC-ITEM-.YYYY.-"
+  },
+  {
+   "fieldname": "billable",
+   "fieldtype": "Select",
+   "label": "Billable",
+   "options": "Yes\nNo"
+  },
+  {
+   "default": "0",
+   "fieldname": "is_consultation",
+   "fieldtype": "Check",
+   "label": "is_consultation"
+  },
+  {
+   "depends_on": "is_consultation",
+   "fieldname": "consultation_type",
+   "fieldtype": "Select",
+   "label": "consultation_type",
+   "options": "\nIN\nOUT"
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Created",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-17 16:41:51.157056",
+ "modified_by": "Administrator",
+ "module": "Health Care",
+ "name": "Item",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "item_name,item_code,item_price",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "item_name"
+}
