@@ -42,7 +42,8 @@
    "fieldname": "patient",
    "fieldtype": "Link",
    "label": "Patient",
-   "options": "Patient"
+   "options": "Patient",
+   "reqd": 1
   },
   {
    "fieldname": "patient_name",
@@ -66,7 +67,8 @@
    "fieldname": "practitioner",
    "fieldtype": "Link",
    "label": "Practitioner",
-   "options": "Practitioner"
+   "options": "Practitioner",
+   "reqd": 1
   },
   {
    "fieldname": "practitioner_name",
@@ -78,7 +80,8 @@
    "fieldname": "appointment_type",
    "fieldtype": "Select",
    "label": "Appointment Type",
-   "options": "\nOUT\nIN"
+   "options": "\nOUT\nIN",
+   "reqd": 1
   },
   {
    "fetch_from": "amount_paid.item_name",
@@ -124,12 +127,14 @@
   {
    "fieldname": "appointment_date",
    "fieldtype": "Date",
-   "label": "Appointment Date"
+   "label": "Appointment Date",
+   "reqd": 1
   },
   {
    "fieldname": "appointment_time",
    "fieldtype": "Time",
-   "label": "Appointment Time"
+   "label": "Appointment Time",
+   "reqd": 1
   },
   {
    "fieldname": "practioner_details_column",
@@ -154,7 +159,7 @@
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-01-17 20:29:23.403832",
+ "modified": "2022-01-18 13:34:44.625691",
  "modified_by": "Administrator",
  "module": "Health Care",
  "name": "Patient Appointment",
