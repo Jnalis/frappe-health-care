@@ -38,6 +38,7 @@ class PatientAppointment(Document):
 
 				if item_to_charge:
 					self.invoiced = 1
+					
 					self.item_charged = item_to_charge.name
 					self.amount_paid = item_to_charge.item_price
 		
