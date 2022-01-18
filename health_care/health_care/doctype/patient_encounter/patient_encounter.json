@@ -1,0 +1,238 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-01-18 14:18:30.789181",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "primary_information_section",
+  "naming_series",
+  "patient",
+  "patient_name",
+  "practitioner_infomations_column",
+  "practitioner",
+  "practitioner_name",
+  "practitioner_department",
+  "apponintment_details_section",
+  "appointment",
+  "appointment_type",
+  "encounter_details_section",
+  "encounter_date",
+  "column_break_14",
+  "encounter_time",
+  "insurance_details_section",
+  "has_insuarance",
+  "patient_vital_sign_details_section",
+  "vital_sign",
+  "date",
+  "time",
+  "column_break_21",
+  "height",
+  "weight",
+  "patient_symptoms_section",
+  "symptoms",
+  "column_break_27",
+  "sign",
+  "investigation_section",
+  "lab_test"
+ ],
+ "fields": [
+  {
+   "fieldname": "primary_information_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Details and Primary Information "
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "HLC-ENC-.YYYY.-"
+  },
+  {
+   "fieldname": "patient",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Patient",
+   "options": "Patient",
+   "reqd": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "patient_name",
+   "fieldtype": "Data",
+   "label": "Patient Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "apponintment_details_section",
+   "fieldtype": "Section Break",
+   "label": "Apponintment Details"
+  },
+  {
+   "fieldname": "practitioner_infomations_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "practitioner",
+   "fieldtype": "Link",
+   "label": "Practitioner",
+   "options": "Practitioner",
+   "reqd": 1
+  },
+  {
+   "fieldname": "practitioner_name",
+   "fieldtype": "Data",
+   "label": "Practitioner Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "practitioner_department",
+   "fieldtype": "Data",
+   "label": "Practitioner Department",
+   "read_only": 1
+  },
+  {
+   "fieldname": "appointment",
+   "fieldtype": "Link",
+   "label": "Appointment",
+   "options": "Patient Appointment",
+   "reqd": 1
+  },
+  {
+   "fieldname": "appointment_type",
+   "fieldtype": "Data",
+   "label": "Appointment Type",
+   "read_only": 1
+  },
+  {
+   "fieldname": "encounter_details_section",
+   "fieldtype": "Section Break",
+   "label": "Encounter Details"
+  },
+  {
+   "fieldname": "encounter_date",
+   "fieldtype": "Date",
+   "label": "Encounter Date"
+  },
+  {
+   "fieldname": "encounter_time",
+   "fieldtype": "Time",
+   "label": "Encounter Time"
+  },
+  {
+   "fieldname": "insurance_details_section",
+   "fieldtype": "Section Break",
+   "label": "Insurance Details"
+  },
+  {
+   "default": "0",
+   "fieldname": "has_insuarance",
+   "fieldtype": "Check",
+   "label": "Has Insuarance",
+   "read_only": 1
+  },
+  {
+   "fieldname": "patient_vital_sign_details_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Vital Sign Details"
+  },
+  {
+   "fieldname": "vital_sign",
+   "fieldtype": "Link",
+   "label": "Vital Sign",
+   "options": "Vital Sign",
+   "reqd": 1
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date",
+   "read_only": 1
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "height",
+   "fieldtype": "Data",
+   "label": "Height",
+   "read_only": 1
+  },
+  {
+   "fieldname": "weight",
+   "fieldtype": "Data",
+   "label": "Weight",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_14",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "patient_symptoms_section",
+   "fieldtype": "Section Break",
+   "label": "Patient Symptoms"
+  },
+  {
+   "fieldname": "symptoms",
+   "fieldtype": "Table MultiSelect",
+   "label": "Symptoms",
+   "options": "Patient Encounter Symptoms"
+  },
+  {
+   "fieldname": "column_break_27",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Table MultiSelect",
+   "label": "Sign",
+   "options": "Patient Encounter Sign"
+  },
+  {
+   "fieldname": "investigation_section",
+   "fieldtype": "Section Break",
+   "label": "Investigation"
+  },
+  {
+   "fieldname": "lab_test",
+   "fieldtype": "Link",
+   "label": "Lab Test",
+   "options": "Lab Prescription"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-18 16:52:24.906387",
+ "modified_by": "Administrator",
+ "module": "Health Care",
+ "name": "Patient Encounter",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

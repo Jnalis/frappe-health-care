@@ -1,0 +1,31 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2022-01-18 16:20:46.891885",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "disease_sign"
+ ],
+ "fields": [
+  {
+   "fieldname": "disease_sign",
+   "fieldtype": "Link",
+   "label": "Disease Sign",
+   "options": "Doctor Sign"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2022-01-18 16:20:46.891885",
+ "modified_by": "Administrator",
+ "module": "Health Care",
+ "name": "Patient Encounter Sign",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

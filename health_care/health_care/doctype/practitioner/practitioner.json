@@ -1,0 +1,134 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2022-01-14 15:23:41.054702",
+ "doctype": "DocType",
+ "document_type": "Setup",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "status",
+  "first_name",
+  "second_name",
+  "practitioner_no",
+  "practitioner_full_name",
+  "column_break_9",
+  "practitioner_phone",
+  "department",
+  "signature",
+  "ipd_item",
+  "ipd_price",
+  "opd_item",
+  "opd_price"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "second_name",
+   "fieldtype": "Data",
+   "label": "Second Name"
+  },
+  {
+   "fieldname": "practitioner_no",
+   "fieldtype": "Data",
+   "label": "Practitioner No"
+  },
+  {
+   "fieldname": "department",
+   "fieldtype": "Data",
+   "label": "Department"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Status",
+   "options": "Active\nDisabled",
+   "read_only": 1
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "ipd_item",
+   "fieldtype": "Data",
+   "label": "IPD Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "ipd_price",
+   "fieldtype": "Data",
+   "label": "IPD Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "opd_item",
+   "fieldtype": "Data",
+   "label": "OPD Item",
+   "read_only": 1
+  },
+  {
+   "fieldname": "opd_price",
+   "fieldtype": "Data",
+   "label": "OPD Price",
+   "read_only": 1
+  },
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Series",
+   "options": "HLC-PRAC-.YYYY.-"
+  },
+  {
+   "fieldname": "practitioner_full_name",
+   "fieldtype": "Data",
+   "label": "Practitioner Full Name",
+   "read_only": 1
+  },
+  {
+   "fieldname": "practitioner_phone",
+   "fieldtype": "Data",
+   "label": "Phone"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-01-17 12:34:11.601077",
+ "modified_by": "Administrator",
+ "module": "Health Care",
+ "name": "Practitioner",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "search_fields": "practitioner_full_name, practitioner_phone",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "practitioner_full_name"
+}
